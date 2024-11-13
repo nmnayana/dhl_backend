@@ -6,7 +6,7 @@ const Shipment = require("./model/shipmentModel.js");
 require("dotenv").config();
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
 // Enable CORS for all origins
 app.use(cors());
